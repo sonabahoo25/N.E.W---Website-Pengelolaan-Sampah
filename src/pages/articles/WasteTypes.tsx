@@ -4,6 +4,7 @@ import { ArrowLeft, AlertTriangle } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SampahImage from "@/assets/Sampah.jpeg";
 
 const WasteTypes = () => {
   const wasteTypes = [
@@ -67,7 +68,23 @@ const WasteTypes = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      
+
+      {/* Hero Image*/}
+      <div className="relative h-[400px] overflow-hidden">
+        <img
+          src={SampahImage}
+          alt="Pengertian, Jenis, dan Dampak Sampah"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/30" />
+        <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+          <div className="container mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold mb-2">Pengertian, Jenis, dan Dampak Sampah</h1>
+            <p className="text-xl opacity-90">Memahami berbagai jenis sampah dan dampaknya terhadap lingkungan</p>
+          </div>
+        </div>
+      </div>
+
       <article className="py-16 bg-background flex-1">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
@@ -78,20 +95,19 @@ const WasteTypes = () => {
               </Button>
             </Link>
 
-            <h1 className="text-4xl font-bold mb-4">Pengertian, Jenis, dan Dampak Sampah</h1>
-            <p className="text-muted-foreground mb-8">Memahami berbagai jenis sampah dan dampaknya terhadap lingkungan</p>
+
 
             <div className="prose max-w-none space-y-6">
               <Card>
                 <CardContent className="pt-6">
                   <h2 className="text-2xl font-semibold mb-4">Apa itu Sampah?</h2>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Sampah adalah sisa atau buangan dari aktivitas manusia atau proses alam yang sudah tidak 
-                    digunakan lagi. Sampah dapat berbentuk padat, cair, atau gas yang dihasilkan dari berbagai 
+                    Sampah adalah sisa atau buangan dari aktivitas manusia atau proses alam yang sudah tidak
+                    digunakan lagi. Sampah dapat berbentuk padat, cair, atau gas yang dihasilkan dari berbagai
                     kegiatan seperti rumah tangga, industri, pertanian, dan komersial.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
-                    Pengelolaan sampah yang tidak tepat dapat menimbulkan berbagai masalah lingkungan dan kesehatan. 
+                    Pengelolaan sampah yang tidak tepat dapat menimbulkan berbagai masalah lingkungan dan kesehatan.
                     Oleh karena itu, penting untuk memahami jenis-jenis sampah dan cara pengelolaannya yang benar.
                   </p>
                 </CardContent>
@@ -127,7 +143,7 @@ const WasteTypes = () => {
                     <div>
                       <h2 className="text-2xl font-semibold mb-4">Dampak Sampah Terhadap Lingkungan</h2>
                       <p className="text-muted-foreground mb-6 leading-relaxed">
-                        Sampah yang tidak dikelola dengan baik dapat menimbulkan berbagai dampak negatif 
+                        Sampah yang tidak dikelola dengan baik dapat menimbulkan berbagai dampak negatif
                         terhadap lingkungan dan kesehatan manusia. Berikut adalah dampak-dampak utama:
                       </p>
                     </div>
@@ -174,7 +190,7 @@ const WasteTypes = () => {
                 <CardContent className="pt-6">
                   <h2 className="text-2xl font-semibold mb-4">Solusi dan Tindakan</h2>
                   <p className="leading-relaxed opacity-90 mb-4">
-                    Untuk mengatasi masalah sampah, diperlukan upaya bersama dari semua pihak. Beberapa 
+                    Untuk mengatasi masalah sampah, diperlukan upaya bersama dari semua pihak. Beberapa
                     tindakan yang dapat dilakukan:
                   </p>
                   <ul className="list-disc pl-6 space-y-2 opacity-90">
