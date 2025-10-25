@@ -4,12 +4,30 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import RRRImage from "@/assets/3R-Concept.png";
 
 const ThreeRConcept = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      
+
+      {/* Hero Image  */}
+      <div className="relative h-[400px] overflow-hidden">
+        <img
+          src={RRRImage}
+          alt="Konsep 3R: Reduce, Reuse, Recycle"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/30" />
+        <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+          <div className="container mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold mb-2">Konsep 3R</h1>
+            <p className="text-xl opacity-90">Panduan lengkap menerapkan 3R dalam kehidupan sehari-hari</p>
+          </div>
+        </div>
+      </div>
+
+
       <article className="py-16 bg-background flex-1">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
@@ -20,17 +38,14 @@ const ThreeRConcept = () => {
               </Button>
             </Link>
 
-            <h1 className="text-4xl font-bold mb-4">Konsep 3R: Reduce, Reuse, Recycle</h1>
-            <p className="text-muted-foreground mb-8">Panduan lengkap menerapkan 3R dalam kehidupan sehari-hari</p>
-
             <div className="prose max-w-none space-y-6">
               <Card>
                 <CardContent className="pt-6">
                   <h2 className="text-2xl font-semibold mb-4">Apa itu 3R?</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    Konsep 3R adalah prinsip pengelolaan sampah yang terdiri dari tiga langkah utama: 
-                    Reduce (Mengurangi), Reuse (Menggunakan Kembali), dan Recycle (Daur Ulang). 
-                    Konsep ini merupakan pendekatan hierarkis yang paling efektif dalam mengelola 
+                    Konsep 3R adalah prinsip pengelolaan sampah yang terdiri dari tiga langkah utama:
+                    Reduce (Mengurangi), Reuse (Menggunakan Kembali), dan Recycle (Daur Ulang).
+                    Konsep ini merupakan pendekatan hierarkis yang paling efektif dalam mengelola
                     sampah dan meminimalkan dampak negatif terhadap lingkungan.
                   </p>
                 </CardContent>
@@ -40,7 +55,7 @@ const ThreeRConcept = () => {
                 <CardContent className="pt-6">
                   <h2 className="text-2xl font-semibold mb-4 text-primary">1. Reduce (Mengurangi)</h2>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Reduce adalah langkah pertama dan paling penting dalam konsep 3R. Prinsipnya adalah 
+                    Reduce adalah langkah pertama dan paling penting dalam konsep 3R. Prinsipnya adalah
                     mengurangi penggunaan barang atau bahan yang dapat menghasilkan sampah.
                   </p>
                   <h3 className="font-semibold mb-2">Cara Menerapkan Reduce:</h3>
@@ -59,7 +74,7 @@ const ThreeRConcept = () => {
                 <CardContent className="pt-6">
                   <h2 className="text-2xl font-semibold mb-4 text-secondary">2. Reuse (Menggunakan Kembali)</h2>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Reuse berarti menggunakan kembali barang atau bahan yang masih dapat digunakan 
+                    Reuse berarti menggunakan kembali barang atau bahan yang masih dapat digunakan
                     sebelum dibuang. Ini membantu memperpanjang umur produk dan mengurangi sampah.
                   </p>
                   <h3 className="font-semibold mb-2">Cara Menerapkan Reuse:</h3>
@@ -78,7 +93,7 @@ const ThreeRConcept = () => {
                 <CardContent className="pt-6">
                   <h2 className="text-2xl font-semibold mb-4 text-accent">3. Recycle (Daur Ulang)</h2>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Recycle adalah proses mengolah sampah menjadi produk baru yang dapat digunakan kembali. 
+                    Recycle adalah proses mengolah sampah menjadi produk baru yang dapat digunakan kembali.
                     Ini adalah langkah terakhir setelah Reduce dan Reuse.
                   </p>
                   <h3 className="font-semibold mb-2">Material yang Dapat Didaur Ulang:</h3>
@@ -129,9 +144,9 @@ const ThreeRConcept = () => {
                 <CardContent className="pt-6">
                   <h2 className="text-2xl font-semibold mb-4">Kesimpulan</h2>
                   <p className="leading-relaxed opacity-90">
-                    Konsep 3R adalah solusi sederhana namun efektif untuk mengurangi masalah sampah. 
-                    Dengan menerapkan Reduce, Reuse, dan Recycle dalam kehidupan sehari-hari, kita 
-                    dapat memberikan kontribusi nyata untuk kelestarian lingkungan. Mari mulai dari 
+                    Konsep 3R adalah solusi sederhana namun efektif untuk mengurangi masalah sampah.
+                    Dengan menerapkan Reduce, Reuse, dan Recycle dalam kehidupan sehari-hari, kita
+                    dapat memberikan kontribusi nyata untuk kelestarian lingkungan. Mari mulai dari
                     hal kecil dan jadikan 3R sebagai gaya hidup kita!
                   </p>
                 </CardContent>
