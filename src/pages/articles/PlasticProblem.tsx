@@ -81,12 +81,12 @@ const PlasticProblem = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      
+
       {/* Hero Image */}
       <div className="relative h-[400px] overflow-hidden">
-        <img 
-          src={plasticImage} 
-          alt="Plastic Pollution" 
+        <img
+          src={plasticImage}
+          alt="Plastic Pollution"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-black/40" />
@@ -113,14 +113,14 @@ const PlasticProblem = () => {
                 <CardContent className="pt-6">
                   <h2 className="text-2xl font-semibold mb-4">Kondisi Sampah Plastik di Indonesia</h2>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Indonesia menghadapi krisis sampah plastik yang semakin mengkhawatirkan. Sebagai negara 
-                    kepulauan terbesar di dunia dengan populasi lebih dari 270 juta jiwa, Indonesia menjadi 
-                    salah satu kontributor terbesar sampah plastik ke laut di dunia, menempati peringkat kedua 
+                    Indonesia menghadapi krisis sampah plastik yang semakin mengkhawatirkan. Sebagai negara
+                    kepulauan terbesar di dunia dengan populasi lebih dari 270 juta jiwa, Indonesia menjadi
+                    salah satu kontributor terbesar sampah plastik ke laut di dunia, menempati peringkat kedua
                     setelah China.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
-                    Setiap tahun, ribuan ton sampah plastik mencemari pantai, sungai, dan laut Indonesia. 
-                    Kondisi ini tidak hanya mengancam kehidupan laut, tetapi juga berdampak pada kesehatan 
+                    Setiap tahun, ribuan ton sampah plastik mencemari pantai, sungai, dan laut Indonesia.
+                    Kondisi ini tidak hanya mengancam kehidupan laut, tetapi juga berdampak pada kesehatan
                     manusia, ekonomi, dan pariwisata.
                   </p>
                 </CardContent>
@@ -170,30 +170,30 @@ const PlasticProblem = () => {
                     <div>
                       <h3 className="font-semibold mb-2">🌊 Dampak Terhadap Kehidupan Laut</h3>
                       <p className="text-muted-foreground text-sm">
-                        Lebih dari 1 juta burung laut dan 100.000 mamalia laut mati setiap tahun akibat 
+                        Lebih dari 1 juta burung laut dan 100.000 mamalia laut mati setiap tahun akibat
                         sampah plastik. Mikroplastik masuk ke rantai makanan laut dan akhirnya dikonsumsi manusia.
                       </p>
                     </div>
                     <div>
                       <h3 className="font-semibold mb-2">🏥 Dampak Kesehatan</h3>
                       <p className="text-muted-foreground text-sm">
-                        Plastik mengandung bahan kimia berbahaya seperti BPA yang dapat mengganggu sistem 
-                        hormon dan meningkatkan risiko kanker. Mikroplastik ditemukan dalam air minum dan 
+                        Plastik mengandung bahan kimia berbahaya seperti BPA yang dapat mengganggu sistem
+                        hormon dan meningkatkan risiko kanker. Mikroplastik ditemukan dalam air minum dan
                         makanan yang kita konsumsi.
                       </p>
                     </div>
                     <div>
                       <h3 className="font-semibold mb-2">💰 Dampak Ekonomi</h3>
                       <p className="text-muted-foreground text-sm">
-                        Kerugian ekonomi dari sampah plastik di sektor pariwisata dan perikanan mencapai 
+                        Kerugian ekonomi dari sampah plastik di sektor pariwisata dan perikanan mencapai
                         triliunan rupiah. Biaya pembersihan dan pengelolaan sampah membebani anggaran daerah.
                       </p>
                     </div>
                     <div>
                       <h3 className="font-semibold mb-2">🌍 Dampak Lingkungan</h3>
                       <p className="text-muted-foreground text-sm">
-                        Plastik membutuhkan ratusan tahun untuk terurai, mencemari tanah dan air tanah. 
-                        Pembakaran plastik menghasilkan gas beracun yang mencemari udara dan berkontribusi 
+                        Plastik membutuhkan ratusan tahun untuk terurai, mencemari tanah dan air tanah.
+                        Pembakaran plastik menghasilkan gas beracun yang mencemari udara dan berkontribusi
                         pada perubahan iklim.
                       </p>
                     </div>
@@ -205,7 +205,7 @@ const PlasticProblem = () => {
               <div>
                 <h2 className="text-2xl font-semibold mb-4">Solusi dan Aksi Nyata</h2>
                 <p className="text-muted-foreground mb-6">
-                  Mengatasi masalah sampah plastik memerlukan kolaborasi dari semua pihak. Berikut adalah 
+                  Mengatasi masalah sampah plastik memerlukan kolaborasi dari semua pihak. Berikut adalah
                   tindakan yang dapat dilakukan di berbagai level:
                 </p>
                 <div className="space-y-4">
@@ -232,13 +232,13 @@ const PlasticProblem = () => {
                 <CardContent className="pt-6">
                   <h2 className="text-2xl font-semibold mb-4">Saatnya Bertindak!</h2>
                   <p className="leading-relaxed opacity-90 mb-4">
-                    Krisis sampah plastik di Indonesia bukan hanya tanggung jawab pemerintah atau industri, 
-                    tetapi tanggung jawab kita bersama. Setiap tindakan kecil yang kita lakukan hari ini 
+                    Krisis sampah plastik di Indonesia bukan hanya tanggung jawab pemerintah atau industri,
+                    tetapi tanggung jawab kita bersama. Setiap tindakan kecil yang kita lakukan hari ini
                     akan memberikan dampak besar untuk masa depan.
                   </p>
                   <p className="leading-relaxed opacity-90">
-                    Mari mulai dari diri sendiri dengan mengurangi penggunaan plastik sekali pakai, 
-                    memilah sampah, dan mendukung gerakan ramah lingkungan. Bersama-sama, kita dapat 
+                    Mari mulai dari diri sendiri dengan mengurangi penggunaan plastik sekali pakai,
+                    memilah sampah, dan mendukung gerakan ramah lingkungan. Bersama-sama, kita dapat
                     menciptakan Indonesia yang lebih bersih dan berkelanjutan!
                   </p>
                 </CardContent>
